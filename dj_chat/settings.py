@@ -36,6 +36,9 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    # specified
+    "daphne",
+
     "django.contrib.staticfiles",
 
     "chat",
@@ -69,7 +72,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "dj_chat.wsgi.application"
+# WSGI_APPLICATION = "dj_chat.wsgi.application"
+ASGI_APPLICATION = "dj_chat.asgi.application"
 
 
 # Database
